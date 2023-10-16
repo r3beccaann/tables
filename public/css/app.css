@@ -1,50 +1,85 @@
 
+:root {
+    --darkBlue: rgba(0,36,108,1);
+    --medBlue: rgba(0,70,208,1);
+    --bodyFont: 'Roboto', sans-serif;
+    --titleFont: 'Lato', sans-serif;
+    --backgroundImage:  url('../images/player.png.png')  ;
+}
 
 
 .main {
-    font-family: 'Roboto', sans-serif;
-
+    font-family: var(--bodyFont);
     color: white;
   font-size: 1.1rem;
     background: rgb(0,70,208);
 background: linear-gradient(99deg, rgba(0,70,208,1) 0%, rgba(0,36,108,1) 75%);
-    /* height: 45vh; */
-    /* width: 70%; */
-    border-radius: 15px;   
+    border-radius: 20px;   
     -webkit-box-shadow: inset 0px 0px 92px -27px rgba(0,0,0,1);
     -moz-box-shadow: inset 0px 0px 92px -27px rgba(0,0,0,1);
     box-shadow: inset 0px 0px 92px -27px rgba(0,0,0,1);
     min-width: 100%;
- 
-    
-
+    overflow: hidden;
+white-space: nowrap;
    
 }
+
+@media only screen and (max-width: 767px) { 
+.main {
+    background: rgb(0,70,208);
+    background: linear-gradient(45deg, rgba(0,70,208,1) 20%, rgb(9, 53, 143) 75%);
+}
+}
+
+.outer {
+    width: 170px;
+}
+
+.inner {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 170px;
+
+}
+
 
 
 .circle {
     border-radius: 50%;
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
     background: #fff;
-    border: 3px solid #eb0000;
+    border: 2px solid #eb0000;
     color: #eb0000;
     text-align: center;
-    box-shadow: 0px 2px 5px 1px black;
-
+    box-shadow: 0px 2px 5px 1px rgb(54, 54, 54);
+    margin-top: 0;
+    margin: 0;
   }
 
-.player-image {
 
+  @media only screen and (max-width: 715px) {  
+    .circle {
+        height: 25px;
+        width: 25px;
+        font-size: 0.8rem;
+    } 
 }
-
 
 
 .title {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--titleFont);
     font-size: 3.3rem;     
     font-weight: bold; 
 }
+
+@media only screen and (max-width: 392px) {   
+    .title {
+        font-size: 2.2rem;
+    }}
+
+
 
 .head-text {
     font-weight: bold;
@@ -62,117 +97,228 @@ background: linear-gradient(99deg, rgba(0,70,208,1) 0%, rgba(0,36,108,1) 75%);
     margin-top: 20px; 
 }
 
-table {
-    width: 100%;
-    background: #fff;
-    /* border: 1px solid #dedede; */
-    background-color: transparent; 
-    width: 100%;
-}
-
-/* .main::after { 
+.main::after { 
     content: ''; 
-    background: url('../images/player.png.png')  ;
-        background-image: url('../images/player.png.png');
+    background: var(--backgroundImage);
+        background-image: var(--backgroundImage);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:contain;
     position: absolute; 
-    opacity: 0.2; 
-    top: 10%; 
-    left: 36%;
-    height: 50%;
-    width: 50%;
-} */
-    /* z-index: 100 
-
-.league-table {
-    position: relative;
-    background-color: green;
-}
-
-table thead tr th {
-    /* padding: 20px; */
-    /* border: 1px solid #dedede; */
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
-   
-   
-}
-
-table.table-striped tbody tr:nth-of-type(odd) {
-    background: transparent
-}
-
-table.result-point tr td.number {
-    width: 100px;
-    position: relative;
-} 
-
-.text-left {
-    text-align: left!important;
-}
-
-table tr td {
-    padding: 10px 10px;
-    /* border: 1px solid #dedede; */
-    border-bottom: 1px solid white;
-    
-}
-table.result-point tr td .fa.fa-caret-up {
-    color: green;
-}
-
-table.result-point tr td .fa {
-    font-size: 20px;
-    position: absolute;
-    /* right: 20px; */
-}
-
-table tr td {
-    /* padding: 10px 40px; */
-    /* border: 1px solid #dedede; */
-    border-bottom: 1px solid white;
-    box-
-    
-    
-}
-
-table tr {
-    box-shadow: 0px 5px 5px #000000;
+    opacity: 0.1; 
+    top: 0%; 
+    left: 11%;
+    height: 75%;
+    width: 75%;
 }
 
 .flag {
-    max-width: 32px;
-    float: left;
-    margin-right: 11px;
-    margin-top: 1px;
-  
+    height: 25px;
+    width: auto;
 }
 
-.sm-text {
-    font-size: 10px;
-}
-
-table tr td img {
-    max-width: 32px;
-    margin-right: 11px;
-    margin-top: 1px;
-    border: 1px solid #dedede;
-}
+@media only screen and (max-width: 990px) {
+    .flag {
+        height: 20px;
+        width: auto;
+        margin-top: 7px;
+    }
+    }
 
 
-@media only screen and (max-width: 767px) {
+ @media only screen and (max-width: 1420px) {   
+    .box {
+        width: 50%;
+    }}
 
-.hidden-sm {
-    display: none !important;
-}
 
-}
+    @media only screen and (min-width: 1420px) {   
+        .box {
+            width: 35%;
+        }
+    }
 
-.border-right {
-    border-right: 1px solid white;
-}
+    @media only screen and (max-width: 498px) {   
+        .box {
+            width: 70%;
+        }}
+
+        @media only screen and (max-width: 392px) {   
+            .box {
+                width: 80%;
+            }}
+
+
+    
+    .team-name {
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+     
+    }
+
+    @media only screen and (max-width: 2025px) {   
+        .team-name {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media only screen and (max-width: 1841px) {   
+        .team-name {
+            font-size: 1rem;
+        }
+    }
+
+    
+    @media only screen and (max-width: 1630px) {   
+        .team-name {
+            font-size: 0.9rem;
+        }
+
+        .outer {
+            width: 130px;
+        }
+        
+        .inner {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 130px;
+        
+        }
+    }
+
+       
+    @media only screen and (max-width: 1414px) {   
+        .team-name {
+            font-size: 0.8rem;
+        }
+        .outer {
+            width: 110px;
+        }
+        
+        .inner {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 110px;
+        
+        }
+    }
+
+    @media only screen and (max-width: 1225px) {   
+        .team-name {
+            font-size: 0.8rem;
+        }
+        .outer {
+            width: 90px;
+        }
+        
+        .inner {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 90px;
+        
+        }
+    }
+        
+    @media only screen and (max-width: 1082px) {   
+        .team-name {
+            font-size: 0.8rem;
+        }
+    }    
+
+    @media only screen and (max-width: 1020px) {   
+        .team-name {
+            font-size: 0.8rem;
+        }
+        .outer {
+            width: 70px;
+        }
+        
+        .inner {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 70px;
+        
+        }
+    }
+
+
+    @media only screen and (max-width: 924px) {   
+        .team-name {
+            font-size: 0.8rem;
+        }
+    }
+
+    
+    @media only screen and (max-width: 832px) {   
+        .team-name {
+            font-size: 0.8rem;
+        }
+        .outer {
+            width: 70px;
+        }
+        
+        .inner {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 70px;
+        
+        }
+    }
+
+
+    @media only screen and (max-width: 767px) {   
+        .team-name {
+            font-size: 1.2rem;
+        }
+        .outer {
+            width: 170px;
+        }
+        
+        .inner {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 170px;
+        
+        }
+    }
+
+    @media only screen and (max-width: 706px) {   
+        .team-name {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media only screen and (max-width: 630px) {   
+        .team-name {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media only screen and (max-width: 568px) {   
+        .team-name {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media only screen and (max-width: 504px) {   
+        .team-name {
+            font-size: 1rem;
+        }
+    }
+
+    @media only screen and (max-width: 446px) {   
+        .team-name {
+            font-size: 1rem;
+        }
+    }
+
+    .cursor:hover {
+        cursor: pointer;
+    }
