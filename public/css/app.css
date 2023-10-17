@@ -4,7 +4,8 @@
     --medBlue: rgba(0,70,208,1);
     --bodyFont: 'Roboto', sans-serif;
     --titleFont: 'Lato', sans-serif;
-    --backgroundImage:  url('../images/player.png.png')  ;
+    --backgroundImage:  url('../images/player.png.png');
+    --hideCol: none;
 }
 
 
@@ -21,6 +22,7 @@ background: linear-gradient(99deg, rgba(0,70,208,1) 0%, rgba(0,36,108,1) 75%);
     min-width: 100%;
     overflow: hidden;
 white-space: nowrap;
+
    
 }
 
@@ -30,6 +32,38 @@ white-space: nowrap;
     background: linear-gradient(45deg, rgba(0,70,208,1) 20%, rgb(9, 53, 143) 75%);
 }
 }
+
+.main::after { 
+    content: ''; 
+    background: var(--backgroundImage);
+        background-image: var(--backgroundImage);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+    position: absolute; 
+    opacity: 0.2; 
+    top: 11%; 
+    left: 18%;
+    height: 60%;
+    width: 60%;
+}
+
+@media only screen and (max-width: 392px) {  
+    .main::after {
+        content: ''; 
+        background: var(--backgroundImage);
+            background-image: var(--backgroundImage);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:contain;
+        position: absolute; 
+        opacity: 0.1; 
+        top: 0%; 
+        left: 9%;
+        height: 80%;
+        width: 80%;
+    }
+    }
 
 .outer {
     width: 170px;
@@ -71,7 +105,8 @@ white-space: nowrap;
 .title {
     font-family: var(--titleFont);
     font-size: 3.3rem;     
-    font-weight: bold; 
+    font-weight: bold;
+    text-shadow: 0px 3px 3px rgb(0, 0, 0); 
 }
 
 @media only screen and (max-width: 392px) {   
@@ -97,31 +132,18 @@ white-space: nowrap;
     margin-top: 20px; 
 }
 
-.main::after { 
-    content: ''; 
-    background: var(--backgroundImage);
-        background-image: var(--backgroundImage);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size:contain;
-    position: absolute; 
-    opacity: 0.1; 
-    top: 0%; 
-    left: 11%;
-    height: 75%;
-    width: 75%;
-}
+
+
 
 .flag {
-    height: 25px;
+    height: 30px;
     width: auto;
 }
 
 @media only screen and (max-width: 990px) {
     .flag {
-        height: 20px;
+        height: 25px;
         width: auto;
-        margin-top: 7px;
     }
     }
 
@@ -322,3 +344,100 @@ white-space: nowrap;
     .cursor:hover {
         cursor: pointer;
     }
+
+/* classes for each column to be turned off */
+.shieldColHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    /* display: var(--hideCol); */
+}
+
+.shieldCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    /* display: var(--hideCol); */
+}
+
+.positionColHead {
+    /* display: var(--hideCol); */
+}
+
+.positionCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    /* display: var(--hideCol); */
+}
+
+.flagColHead {
+    /* display: var(--hideCol); */
+}
+
+.flagCol {
+    display: flex;
+    justify-content: center;
+
+    /* display: var(--hideCol); */
+}
+
+.teamColHead {
+
+    /* display: var(--hideCol); */
+}
+
+.teamCol {
+    display: flex;
+    align-items: center;
+ 
+    /* display: var(--hideCol); */
+}
+
+.shirtColHead {
+display: flex;
+justify-content: center;
+align-items: center;
+
+/* display: var(--hideCol); */
+}
+
+.shirtCol {
+display: flex;
+justify-content: center;
+align-items: center;
+
+/* display: var(--hideCol); */
+}
+
+.pColHead {
+    /* display: var(--hideCol); */
+}
+
+.pCol {
+    /* display: var(--hideCol); */
+}
+
+.ptsColHead {
+    /* display: var(--hideCol); */
+}
+
+.ptsCol {
+    /* display: var(--hideCol); */
+}
+
+.plusMinusColHead {
+    /* display: var(--hideCol); */
+}
+
+.plusMinusCol {
+    /* display: var(--hideCol); */
+}
+
+
+
+
+
