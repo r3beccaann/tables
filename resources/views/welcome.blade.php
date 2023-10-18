@@ -47,7 +47,7 @@
             >
 
              <!-- match time icon --> 
-            <x-time rootStyle="" iconClass="fa-solid fa-stopwatch fa-2xl" iconStyle="color: #ffffff" divClass="col-8 d-block justify-content-center align-items-center" divStyle="line-height:1.2;" divRowClass="row" divRowStyle="" textStartClass="ms-2 head-text text-start" textStartStyle="font-size: 1.7rem;" startText="30 min" matchText="Matches" textMatchesClass="ms-2 head-text" textMatchesStyle="font-size: 1.7rem;" />
+            <x-time rootStyle="" iconClass="fa-regular fa-clock fa-2xl" iconStyle="color: #ffffff" divClass="col-8 d-block justify-content-center align-items-center" divStyle="line-height:1.2;" divRowClass="row" divRowStyle="" textStartClass="ms-2 head-text text-start" textStartStyle="font-size: 1.7rem;" startText="30 min" matchText="Matches" textMatchesClass="ms-2 head-text" textMatchesStyle="font-size: 1.7rem;" />
 
             </div>
             <div
@@ -73,15 +73,15 @@
               <div class="col-lg-2 col-md-2 col-3 px-0 text-center">
                 <!-- shield -->
                 <div class="row g-0">
-                <div class="col-4 col-lg-3 shieldColHead" style="">
+                <div class="col-4 col-lg-3 d-flex justify-content-center align-items-center" style="">
                     <i class="fa-solid fa-shield fa-xl" style="color: #ffa200"></i>
                   </div>
                   <!-- up down -->
-                  <div class="col-4 col-lg-3  text-center positionColHead" style="">
+                  <div class="col-4 col-lg-3  text-center" style="">
                   <i class="fa-solid fa-arrow-down-up-across-line fa-la" style="color: #ffffff;"></i>
                   </div>
                   <!-- flag -->
-                  <div class="col-4 col-lg-3 text-center flagColHead" style="">
+                  <div class="col-4 col-lg-3 text-center" style="">
                
                   </div>
                 </div>
@@ -89,7 +89,7 @@
                <!-- end of first column block incl shield, up down & flag -->
             
               <!-- team -->
-              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left teamColHead" style="">
+              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left" style="">
               <b>Team</b>
               </div>
 
@@ -98,15 +98,15 @@
               <div class="col-lg-2 col-md-2 col-sm-4 col-3 px-0 text-center">
                 <!-- shirt -->
                 <div class="row g-0">
-                <div class="col-4 shirtColHead" style="">
+                <div class="col-4 f-flex justify-content-center align-items-center" style="">
                     <i class="fa-solid fa-shirt" style="color: #ffa200"></i>
                   </div>
                   <!-- P -->
-                  <div class="col-4 text-center pColHead" style="">
+                  <div class="col-4 text-center" style="">
                  <b> P </b>
                   </div>
                   <!-- Pts -->
-                  <div class="col-4 text-center ptsColHead" style="">
+                  <div class="col-4 text-center" style="">
                    <b>Pts</b>
                   </div>
                 </div>
@@ -144,7 +144,7 @@
 <!-- END OF NEW -->
 
               <!-- plus minus -->
-              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center  plusMinusColHead" style="">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center" style="">
               <i class="fa-solid fa-plus-minus" style="color: #ffffff;"></i>
               </div>
 
@@ -205,15 +205,15 @@
               <div class="col-lg-2 col-md-2 col-3 px-0 text-center">
                 <!-- shield -->
                 <div class="row g-0">
-                  <div class="col-4 col-lg-3 shieldCol" style="">
+                  <div class="col-4 col-lg-3 d-flex justify-content-center align-items-center" style="">
                   <i class="fa-solid fa-shield fa-xl" style="color: #01d02a;"></i>
                   </div>
                   <!-- up down -->
-                  <div class="col-4 col-lg-3 text-center  positionCol" style="">
+                  <div class="col-4 col-lg-3 text-center d-flex justify-content-center align-items-center" style="">
                     <p style="" class="circle text-center">1</p>
                   </div>
                   <!-- flag -->
-                  <div class="col-4 col-lg-3  text-center flagCol " style="">
+                  <div class="col-4 col-lg-3  text-center d-flex justify-content-center " style="">
                   <img src="https://img.icons8.com/color/48/000000/russian-federation.png" alt="Russia" class="flag me-0">
                   </div>
                 </div>
@@ -221,7 +221,7 @@
                 <!-- end of first column block incl shield, up down & flag -->
             
               <!-- team -->
-              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name teamCol" style="">
+              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name d-flex align-items-center" style="">
               <div class="outer">
                 <div class="inner">
                 Chiellini Con Carne
@@ -233,15 +233,15 @@
               <div class="col-lg-2 col-md-2 col-sm-4 col-3 px-0 text-center">
                 <!-- shirt-->
                 <div class="row g-0 mt-0">
-                <div class="col-4 shirtCol" style="">
+                <div class="col-4 d-flex justify-content-center align-items-center" style="">
                     <i class="fa-solid fa-shirt" style="color: #01d02a;"></i>
                   </div>
                   <!-- P -->
-                  <div class="col-4 text-center pCol" style="">
+                  <div class="col-4 text-center" style="">
                   4
                   </div>
                   <!-- Pts -->
-                  <div class="col-4 px-0 text-center ptsCol" style="">
+                  <div class="col-4 px-0 text-center" style="">
                   <p class=" yellowBox"style="background-color: yellow; border: 1px solid white; color: black; margin: auto;"><b>22</b></p>
                   </div>
                 </div>
@@ -280,7 +280,7 @@
 
 
               <!-- plus minus -->
-              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center plusMinusCol" style="">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center" style="">
             -7
               </div>
 
@@ -326,15 +326,15 @@
               <div class="col-lg-2 col-md-2 col-3 px-0 text-center">
                 <!-- shield -->
                 <div class="row g-0">
-                  <div class="col-4 col-lg-3 shieldCol" style="">
+                  <div class="col-4 col-lg-3 d-flex justify-content-center align-items-center" style="">
                   <i class="fa-solid fa-shield fa-xl" style="color: #d00101;"></i>
                   </div>
                   <!-- up down -->
-                  <div class="col-4 col-lg-3 text-center  positionCol" style="">
+                  <div class="col-4 col-lg-3 text-center d-flex justify-content-center align-items-center" style="">
                     <p style="" class="circle text-center">2</p>
                   </div>
                   <!-- flag -->
-                  <div class="col-4 col-lg-3  text-center flagCol " style="">
+                  <div class="col-4 col-lg-3  text-center d-flex justify-content-center " style="">
                   <img src="https://img.icons8.com/color/48/000000/usa.png" alt="Russia" class="flag me-0">
                   </div>
                 </div>
@@ -342,7 +342,7 @@
                 <!-- end of first column block incl shield, up down & flag -->
             
               <!-- team -->
-              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name teamCol" style="">
+              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name d-flex align-items-center" style="">
               <div class="outer">
                 <div class="inner">
                 The Hungry Boys
@@ -354,15 +354,15 @@
               <div class="col-lg-2 col-md-2 col-sm-4 col-3 px-0 text-center">
                 <!-- shirt-->
                 <div class="row g-0 mt-0">
-                <div class="col-4 shirtCol" style="">
+                <div class="col-4 d-flex justify-content-center align-items-center" style="">
                     <i class="fa-solid fa-shirt" style="color: #d00101;"></i>
                   </div>
                   <!-- P -->
-                  <div class="col-4 text-center pCol" style="">
+                  <div class="col-4 text-center" style="">
                   4
                   </div>
                   <!-- Pts -->
-                  <div class="col-4 px-0 text-center ptsCol" style="">
+                  <div class="col-4 px-0 text-center" style="">
                   <p class=" yellowBox"style="background-color: yellow; border: 1px solid white; color: black; margin: auto;"><b>22</b></p>
                   </div>
                 </div>
@@ -401,7 +401,7 @@
 
 
               <!-- plus minus -->
-              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center plusMinusCol" style="">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center" style="">
             -1
               </div>
 
@@ -447,15 +447,15 @@
               <div class="col-lg-2 col-md-2 col-3 px-0 text-center">
                 <!-- shield -->
                 <div class="row g-0">
-                  <div class="col-4 col-lg-3 shieldCol" style="">
+                  <div class="col-4 col-lg-3 d-flex justify-content-center align-items-center" style="">
                   <i class="fa-solid fa-shield fa-xl" style="color: #d001a3;"></i>
                   </div>
                   <!-- up down -->
-                  <div class="col-4 col-lg-3 text-center  positionCol" style="">
+                  <div class="col-4 col-lg-3 text-center  d-flex justify-content-center align-items-center" style="">
                     <p style="" class="circle text-center">3</p>
                   </div>
                   <!-- flag -->
-                  <div class="col-4 col-lg-3  text-center flagCol " style="">
+                  <div class="col-4 col-lg-3  text-center d-flex justify-content-center " style="">
                   <img src="https://img.icons8.com/color/48/000000/england.png" alt="Russia" class="flag me-0">
                   </div>
                 </div>
@@ -463,7 +463,7 @@
                 <!-- end of first column block incl shield, up down & flag -->
             
               <!-- team -->
-              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name teamCol" style="">
+              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name d-flex align-items-center" style="">
               <div class="outer">
                 <div class="inner">
               Atheltico Northfield
@@ -475,15 +475,15 @@
               <div class="col-lg-2 col-md-2 col-sm-4 col-3 px-0 text-center">
                 <!-- shirt-->
                 <div class="row g-0 mt-0">
-                <div class="col-4 shirtCol" style="">
+                <div class="col-4 d-flex justify-content-center align-items-center" style="">
                     <i class="fa-solid fa-shirt" style="color: #d001a3;"></i>
                   </div>
                   <!-- P -->
-                  <div class="col-4 text-center pCol" style="">
+                  <div class="col-4 text-center" style="">
                   4
                   </div>
                   <!-- Pts -->
-                  <div class="col-4 px-0 text-center ptsCol" style="">
+                  <div class="col-4 px-0 text-center" style="">
                   <p class=" yellowBox"style="background-color: yellow; border: 1px solid white; color: black; margin: auto;"><b>22</b></p>
                   </div>
                 </div>
@@ -522,7 +522,7 @@
 
 
               <!-- plus minus -->
-              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center plusMinusCol" style="">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center" style="">
             2
               </div>
 
@@ -568,15 +568,15 @@
               <div class="col-lg-2 col-md-2 col-3 px-0 text-center">
                 <!-- shield -->
                 <div class="row g-0">
-                  <div class="col-4 col-lg-3 shieldCol" style="">
+                  <div class="col-4 col-lg-3 d-flex justify-content-center align-items-center" style="">
                   <i class="fa-solid fa-shield fa-xl" style="color: #5400a8;"></i>
                   </div>
                   <!-- up down -->
-                  <div class="col-4 col-lg-3 text-center  positionCol" style="">
+                  <div class="col-4 col-lg-3 text-center d-flex justify-content-center align-items-center " style="">
                     <p style="" class="circle text-center">4</p>
                   </div>
                   <!-- flag -->
-                  <div class="col-4 col-lg-3  text-center flagCol " style="">
+                  <div class="col-4 col-lg-3  text-center d-flex justify-content-center " style="">
                   <img src="https://img.icons8.com/color/48/000000/china.png" alt="Russia" class="flag me-0">
                   </div>
                 </div>
@@ -584,7 +584,7 @@
                 <!-- end of first column block incl shield, up down & flag -->
             
               <!-- team -->
-              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name teamCol" style="">
+              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name d-flex align-items-center" style="">
               <div class="outer">
                 <div class="inner">
                 We've Got Diogo Jota
@@ -596,15 +596,15 @@
               <div class="col-lg-2 col-md-2 col-sm-4 col-3 px-0 text-center">
                 <!-- shirt-->
                 <div class="row g-0 mt-0">
-                <div class="col-4 shirtCol" style="">
+                <div class="col-4 d-flex justify-content-center align-items-center" style="">
                     <i class="fa-solid fa-shirt" style="color: #5400a8;"></i>
                   </div>
                   <!-- P -->
-                  <div class="col-4 text-center pCol" style="">
+                  <div class="col-4 text-center" style="">
                   4
                   </div>
                   <!-- Pts -->
-                  <div class="col-4 px-0 text-center ptsCol" style="">
+                  <div class="col-4 px-0 text-center" style="">
                   <p class=" yellowBox"style="background-color: yellow; border: 1px solid white; color: black; margin: auto;"><b>22</b></p>
                   </div>
                 </div>
@@ -643,7 +643,7 @@
 
 
               <!-- plus minus -->
-              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center plusMinusCol" style="">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center" style="">
             4
               </div>
 
@@ -689,15 +689,15 @@
               <div class="col-lg-2 col-md-2 col-3 px-0 text-center">
                 <!-- shield -->
                 <div class="row g-0">
-                  <div class="col-4 col-lg-3 shieldCol" style="">
+                  <div class="col-4 col-lg-3 d-flex justify-content-center align-items-center" style="">
                   <i class="fa-solid fa-shield fa-xl" style="color: #1fe7ea;"></i>
                   </div>
                   <!-- up down -->
-                  <div class="col-4 col-lg-3 text-center  positionCol" style="">
+                  <div class="col-4 col-lg-3 text-center  d-flex justify-content-center align-items-center" style="">
                     <p style="" class="circle text-center">5</p>
                   </div>
                   <!-- flag -->
-                  <div class="col-4 col-lg-3  text-center flagCol " style="">
+                  <div class="col-4 col-lg-3  text-center d-flex justify-content-center " style="">
                   <img src="https://img.icons8.com/color/48/000000/japan.png" alt="Russia" class="flag me-0">
                   </div>
                 </div>
@@ -705,7 +705,7 @@
                 <!-- end of first column block incl shield, up down & flag -->
             
               <!-- team -->
-              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name teamCol" style="">
+              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name d-flex align-items-center" style="">
               <div class="outer">
                 <div class="inner">
                 Hales Angels C.F.
@@ -717,15 +717,15 @@
               <div class="col-lg-2 col-md-2 col-sm-4 col-3 px-0 text-center">
                 <!-- shirt-->
                 <div class="row g-0 mt-0">
-                <div class="col-4 shirtCol" style="">
+                <div class="col-4 d-flex justify-content-center align-items-center" style="">
                     <i class="fa-solid fa-shirt" style="color: #1fe7ea;"></i>
                   </div>
                   <!-- P -->
-                  <div class="col-4 text-center pCol" style="">
+                  <div class="col-4 text-center" style="">
                   4
                   </div>
                   <!-- Pts -->
-                  <div class="col-4 px-0 text-center ptsCol" style="">
+                  <div class="col-4 px-0 text-center" style="">
                   <p class=" yellowBox"style="background-color: yellow; border: 1px solid white; color: black; margin: auto;"><b>22</b></p>
                   </div>
                 </div>
@@ -764,7 +764,7 @@
 
 
               <!-- plus minus -->
-              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center plusMinusCol" style="">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center" style="">
           3
               </div>
 
@@ -810,15 +810,15 @@
               <div class="col-lg-2 col-md-2 col-3 px-0 text-center">
                 <!-- shield -->
                 <div class="row g-0">
-                  <div class="col-4 col-lg-3 shieldCol" style="">
+                  <div class="col-4 col-lg-3 d-flex justify-content-center align-items-center" style="">
                   <i class="fa-solid fa-shield fa-xl" style="color: #ffed24;"></i>
                   </div>
                   <!-- up down -->
-                  <div class="col-4 col-lg-3 text-center  positionCol" style="">
+                  <div class="col-4 col-lg-3 text-center  d-flex justify-content-center align-items-center" style="">
                     <p style="" class="circle text-center">6</p>
                   </div>
                   <!-- flag -->
-                  <div class="col-4 col-lg-3  text-center flagCol " style="">
+                  <div class="col-4 col-lg-3  text-center d-flex justify-content-center " style="">
                   <img src="https://img.icons8.com/color/48/000000/spain.png" alt="Russia" class="flag me-0">
                   </div>
                 </div>
@@ -826,7 +826,7 @@
                 <!-- end of first column block incl shield, up down & flag -->
             
               <!-- team -->
-              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name teamCol" style="">
+              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name d-flex align-items-center" style="">
               <div class="outer">
                 <div class="inner">
                 Dumbledore Pure Brummie
@@ -838,15 +838,15 @@
               <div class="col-lg-2 col-md-2 col-sm-4 col-3 px-0 text-center">
                 <!-- shirt-->
                 <div class="row g-0 mt-0">
-                <div class="col-4 shirtCol" style="">
+                <div class="col-4 d-flex justify-content-center align-items-center" style="">
                     <i class="fa-solid fa-shirt" style="color: #ffed24;"></i>
                   </div>
                   <!-- P -->
-                  <div class="col-4 text-center pCol" style="">
+                  <div class="col-4 text-center" style="">
                   4
                   </div>
                   <!-- Pts -->
-                  <div class="col-4 px-0 text-center ptsCol" style="">
+                  <div class="col-4 px-0 text-center" style="">
                   <p class=" yellowBox"style="background-color: yellow; border: 1px solid white; color: black; margin: auto;"><b>22</b></p>
                   </div>
                 </div>
@@ -885,7 +885,7 @@
 
 
               <!-- plus minus -->
-              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center plusMinusCol" style="">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center" style="">
             -3
               </div>
 
@@ -931,15 +931,15 @@
               <div class="col-lg-2 col-md-2 col-3 px-0 text-center">
                 <!-- shield -->
                 <div class="row g-0">
-                  <div class="col-4 col-lg-3 shieldCol" style="">
+                  <div class="col-4 col-lg-3 d-flex justify-content-center align-items-center" style="">
                   <i class="fa-solid fa-shield fa-xl" style="color: #ff8e24;"></i>
                   </div>
                   <!-- up down -->
-                  <div class="col-4 col-lg-3 text-center  positionCol" style="">
+                  <div class="col-4 col-lg-3 text-center  d-flex justify-content-center align-items-center" style="">
                     <p style="" class="circle text-center">7</p>
                   </div>
                   <!-- flag -->
-                  <div class="col-4 col-lg-3  text-center flagCol " style="">
+                  <div class="col-4 col-lg-3  text-center d-flex justify-content-center" style="">
                   <img src="https://img.icons8.com/color/48/000000/france.png" alt="Russia" class="flag me-0">
                   </div>
                 </div>
@@ -947,7 +947,7 @@
                 <!-- end of first column block incl shield, up down & flag -->
             
               <!-- team -->
-              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name teamCol" style="">
+              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name d-flex align-items-center " style="">
               <div class="outer">
                 <div class="inner">
                Neverloseagain F.C.
@@ -959,15 +959,15 @@
               <div class="col-lg-2 col-md-2 col-sm-4 col-3 px-0 text-center">
                 <!-- shirt-->
                 <div class="row g-0 mt-0">
-                <div class="col-4 shirtCol" style="">
+                <div class="col-4 d-flex justify-content-center align-items-center" style="">
                     <i class="fa-solid fa-shirt" style="color: #ff8e24;"></i>
                   </div>
                   <!-- P -->
-                  <div class="col-4 text-center pCol" style="">
+                  <div class="col-4 text-center" style="">
                   4
                   </div>
                   <!-- Pts -->
-                  <div class="col-4 px-0 text-center ptsCol" style="">
+                  <div class="col-4 px-0 text-center" style="">
                   <p class=" yellowBox"style="background-color: yellow; border: 1px solid white; color: black; margin: auto;"><b>22</b></p>
                   </div>
                 </div>
@@ -1006,7 +1006,7 @@
 
 
               <!-- plus minus -->
-              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center plusMinusCol" style="">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center" style="">
             0
               </div>
 
@@ -1052,15 +1052,15 @@
               <div class="col-lg-2 col-md-2 col-3 px-0 text-center">
                 <!-- shield -->
                 <div class="row g-0">
-                  <div class="col-4 col-lg-3 shieldCol" style="">
+                  <div class="col-4 col-lg-3 d-flex justify-content-center align-items-center" style="">
                   <i class="fa-solid fa-shield fa-xl" style="color: #cf96fd;"></i>
                   </div>
                   <!-- up down -->
-                  <div class="col-4 col-lg-3 text-center  positionCol" style="">
+                  <div class="col-4 col-lg-3 text-center  d-flex justify-content-center align-items-center" style="">
                     <p style="" class="circle text-center">8</p>
                   </div>
                   <!-- flag -->
-                  <div class="col-4 col-lg-3  text-center flagCol " style="">
+                  <div class="col-4 col-lg-3  text-center d-flex justify-content-center" style="">
                   <img src="https://img.icons8.com/color/48/000000/ireland.png" alt="Russia" class="flag me-0">
                   </div>
                 </div>
@@ -1068,7 +1068,7 @@
                 <!-- end of first column block incl shield, up down & flag -->
             
               <!-- team -->
-              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name teamCol" style="">
+              <div class="col-lg-2 col-md-2 col-sm-3 col-5 px-0 text-left team-name d-flex align-items-center" style="">
               <div class="outer">
                 <div class="inner">
                 Brummie Boys F.C.
@@ -1080,15 +1080,15 @@
               <div class="col-lg-2 col-md-2 col-sm-4 col-3 px-0 text-center">
                 <!-- shirt-->
                 <div class="row g-0 mt-0">
-                <div class="col-4 shirtCol" style="">
+                <div class="col-4 d-flex justify-content-center align-items-center" style="">
                     <i class="fa-solid fa-shirt" style="color: #cf96fd;"></i>
                   </div>
                   <!-- P -->
-                  <div class="col-4 text-center pCol" style="">
+                  <div class="col-4 text-center" style="">
                   4
                   </div>
                   <!-- Pts -->
-                  <div class="col-4 px-0 text-center ptsCol" style="">
+                  <div class="col-4 px-0 text-center" style="">
                   <p class=" yellowBox"style="background-color: yellow; border: 1px solid white; color: black; margin: auto;"><b>22</b></p>
                   </div>
                 </div>
@@ -1127,7 +1127,7 @@
 
 
               <!-- plus minus -->
-              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center plusMinusCol" style="">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-1 px-0 text-center" style="">
             2
               </div>
 

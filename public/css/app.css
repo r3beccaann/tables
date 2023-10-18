@@ -1,85 +1,85 @@
+/* variables */
 
 :root {
-    --darkBlue: rgba(0,36,108,1);
-    --medBlue: rgba(0,70,208,1);
+    --darkBlue: rgba(0, 36, 108, 1);
+    --medBlue: rgba(0, 70, 208, 1);
     --blackYellow: rgb(143, 133, 0);
     --medYellow: rgb(255, 251, 10);
-    --bodyFont: 'Roboto', sans-serif;
-    --titleFont: 'Lato', sans-serif;
-    --backgroundImage:  url('../images/player.png.png');
+    --bodyFont: "Roboto", sans-serif;
+    --titleFont: "Lato", sans-serif;
+    --backgroundImage: url("../images/player.png.png");
     --hideCol: none;
+    --blueBgTextColor: #fff;
+    --yelBgTextColor: #000;
 }
 
+/* main box styling */
 
 .main {
     font-family: var(--bodyFont);
-    color: white;
-  font-size: 1.1rem;
-    background: rgb(0,70,208);
-background: linear-gradient(99deg, rgba(0,70,208,1) 0%, rgba(0,36,108,1) 75%);
-    border-radius: 20px;   
-    -webkit-box-shadow: inset 0px 0px 92px -27px rgba(0,0,0,1);
-    -moz-box-shadow: inset 0px 0px 92px -27px rgba(0,0,0,1);
-    box-shadow: inset 0px 0px 92px -27px rgba(0,0,0,1);
+    color: var(--blueBgTextColor);
+    font-size: 1.1rem;
+    background: rgb(0, 70, 208);
+    background: linear-gradient(
+        99deg,
+        rgba(0, 70, 208, 1) 0%,
+        rgba(0, 36, 108, 1) 75%
+    );
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0px 0px 92px -27px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 92px -27px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 92px -27px rgba(0, 0, 0, 1);
     min-width: 100%;
     overflow: hidden;
-white-space: nowrap;
-
-   
+    white-space: nowrap;
 }
 
-@media only screen and (max-width: 767px) { 
-.main {
-    background: rgb(0,70,208);
-    background: linear-gradient(45deg, rgba(0,70,208,1) 20%, rgb(9, 53, 143) 75%);
-}
+@media only screen and (max-width: 767px) {
+    .main {
+        background: rgb(0, 70, 208);
+        background: linear-gradient(
+            45deg,
+            rgba(0, 70, 208, 1) 20%,
+            rgb(9, 53, 143) 75%
+        );
+    }
 }
 
-.main::after { 
-    content: ''; 
+/* background image */
+
+.main::after {
+    content: "";
     background: var(--backgroundImage);
-        background-image: var(--backgroundImage);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size:contain;
-    position: absolute; 
-    opacity: 0.2; 
-    top: 11%; 
+    background-image: var(--backgroundImage);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    opacity: 0.2;
+    top: 11%;
     left: 18%;
     height: 60%;
     width: 60%;
 }
 
-@media only screen and (max-width: 392px) {  
+@media only screen and (max-width: 392px) {
     .main::after {
-        content: ''; 
+        content: "";
         background: var(--backgroundImage);
-            background-image: var(--backgroundImage);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size:contain;
-        position: absolute; 
-        opacity: 0.1; 
-        top: 0%; 
+        background-image: var(--backgroundImage);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        opacity: 0.1;
+        top: 0%;
         left: 9%;
         height: 80%;
         width: 80%;
     }
-    }
-
-.outer {
-    width: 170px;
 }
 
-.inner {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 170px;
-
-}
-
-
+/* position circle */
 
 .circle {
     border-radius: 50%;
@@ -92,35 +92,38 @@ white-space: nowrap;
     box-shadow: 0px 2px 5px 1px rgb(54, 54, 54);
     margin-top: 0;
     margin: 0;
-  }
+}
 
-
-  @media only screen and (max-width: 715px) {  
+@media only screen and (max-width: 715px) {
     .circle {
         height: 25px;
         width: 25px;
         font-size: 0.8rem;
-    } 
+    }
 }
 
+/* title font */
 
 .title {
     font-family: var(--titleFont);
-    font-size: 3.3rem;     
+    font-size: 3.3rem;
     font-weight: bold;
-    text-shadow: 0px 3px 3px rgb(0, 0, 0); 
+    text-shadow: 0px 3px 3px rgb(0, 0, 0);
 }
 
-@media only screen and (max-width: 392px) {   
+@media only screen and (max-width: 392px) {
     .title {
         font-size: 2.2rem;
-    }}
+    }
+}
 
-
+/* bold text */
 
 .head-text {
     font-weight: bold;
 }
+
+/* top border */
 
 .head {
     border-bottom: 2px solid rgb(173, 173, 173);
@@ -128,14 +131,15 @@ white-space: nowrap;
     margin-bottom: 10px;
 }
 
+/* bottom border */
+
 .foot {
     border-top: 2px solid rgb(243, 243, 243);
     box-shadow: 0px 0px 5px 2px rgb(53, 53, 53);
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-
-
+/* flag styling */
 
 .flag {
     height: 30px;
@@ -147,10 +151,11 @@ white-space: nowrap;
         height: 25px;
         width: auto;
     }
-    }
+}
 
+/* yellow Pts box & WLD box styling */
 
- @media only screen and (max-width: 1420px) {   
+@media only screen and (max-width: 1420px) {
     .box {
         width: 90%;
     }
@@ -159,358 +164,367 @@ white-space: nowrap;
     }
 }
 
-@media only screen and (max-width: 767px) {   
+@media only screen and (max-width: 767px) {
     .yellowBox {
         width: 50%;
-    }}
+    }
+}
 
-    @media only screen and (max-width: 575px) {   
-        .yellowBox {
-            width: 60%;
-        }}
+@media only screen and (max-width: 575px) {
+    .yellowBox {
+        width: 60%;
+    }
+}
 
-
-    @media only screen and (min-width: 1420px) {   
-       .yellowBox {
+@media only screen and (min-width: 1420px) {
+    .yellowBox {
         width: 40%;
-       }
-
-        .box {
-            width: 80%;
-        }
     }
 
-    @media only screen and (max-width: 498px) {   
-        .yellowBox {
-            width: 70%;
-        }}
+    .box {
+        width: 80%;
+    }
+}
 
-        @media only screen and (max-width: 392px) {   
-            .yellowBox {
-                width: 80%;
-            }}
+@media only screen and (max-width: 498px) {
+    .yellowBox {
+        width: 70%;
+    }
+}
 
+@media only screen and (max-width: 392px) {
+    .yellowBox {
+        width: 80%;
+    }
+}
 
-    
+/* team name size w/ elipsis */
+
+.team-name {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 2025px) {
     .team-name {
         font-size: 1.2rem;
-        padding: 0;
-        margin: 0;
-     
     }
 
-    @media only screen and (min-width: 2025px) {   
-        .team-name {
-            font-size: 1.2rem;
-        }
-        
-        .outer {
-            width: 250px;
-        }
-        
-        .inner {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 250px;
-        
-        }
+    .outer {
+        width: 340px;
     }
 
-    @media only screen and (max-width: 1841px) {   
-        .team-name {
-            font-size: 1rem;
-        }
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 340px;
+    }
+}
+
+@media only screen and (max-width: 2025px) {
+    .team-name {
+        font-size: 1.2rem;
+    }
+    .outer {
+        width: 340px;
     }
 
-    
-    @media only screen and (max-width: 1630px) {   
-        .team-name {
-            font-size: 0.9rem;
-        }
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 340px;
+    }
+}
 
-        .outer {
-            width: 180px;
-        }
-        
-        .inner {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 180px;
-        
-        }
+@media only screen and (max-width: 1860px) {
+    .team-name {
+        font-size: 1.1rem;
     }
 
-       
-    @media only screen and (max-width: 1414px) {   
-        .team-name {
-            font-size: 0.8rem;
-        }
-        .outer {
-            width: 150px;
-        }
-        
-        .inner {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 150px;
-        
-        }
+    .outer {
+        width: 300px;
     }
 
-    @media only screen and (max-width: 1225px) {   
-        .team-name {
-            font-size: 0.8rem;
-        }
-        .outer {
-            width: 150px;
-        }
-        
-        .inner {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 100px;
-        
-        }
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 300px;
     }
-        
-    @media only screen and (max-width: 1082px) {   
-        .team-name {
-            font-size: 0.8rem;
-        }
-    }    
+}
 
-    @media only screen and (max-width: 1020px) {   
-        .team-name {
-            font-size: 0.8rem;
-        }
-        .outer {
-            width: 100px;
-        }
-        
-        .inner {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 100px;
-        
-        }
+@media only screen and (max-width: 1635px) {
+    .team-name {
+        font-size: 1rem;
+    }
+    .outer {
+        width: 270px;
     }
 
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 270px;
+    }
+}
 
-    @media only screen and (max-width: 924px) {   
-        .team-name {
-            font-size: 0.8rem;
-        }
+@media only screen and (max-width: 1480px) {
+    .team-name {
+        font-size: 1rem;
+    }
+    .outer {
+        width: 240px;
     }
 
-    
-    @media only screen and (max-width: 832px) {   
-        .team-name {
-            font-size: 0.8rem;
-        }
-        .outer {
-            width: 90px;
-        }
-        
-        .inner {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 90px;
-        
-        }
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 240px;
+    }
+}
+
+@media only screen and (max-width: 1305px) {
+    .team-name {
+        font-size: 1rem;
     }
 
- 
-
-    @media only screen and (max-width: 767px) {   
-        .team-name {
-            font-size: 1.2rem;
-        }
-        .outer {
-            width: 140px;
-        }
-        
-        .inner {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 140px;
-        
-        }
+    .outer {
+        width: 220px;
     }
 
-    @media only screen and (max-width: 706px) {   
-        .team-name {
-            font-size: 1.2rem;
-        }
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 1218px) {
+    .team-name {
+        font-size: 0.9rem;
+    }
+    .outer {
+        width: 200px;
     }
 
-    @media only screen and (max-width: 630px) {   
-        .team-name {
-            font-size: 0.9rem;
-        }
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 1101px) {
+    .team-name {
+        font-size: 0.9rem;
+    }
+    .outer {
+        width: 180px;
     }
 
-    @media only screen and (max-width: 568px) {   
-        .team-name {
-            font-size: 1.1rem;
-        }
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .team-name {
+        font-size: 0.8rem;
+    }
+    .outer {
+        width: 160px;
     }
 
-    @media only screen and (max-width: 504px) {   
-        .team-name {
-            font-size: 1rem;
-        }
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 891px) {
+    .team-name {
+        font-size: 0.7rem;
+    }
+    .outer {
+        width: 140px;
     }
 
-    @media only screen and (max-width: 446px) {   
-        .team-name {
-            font-size: 1rem;
-        }
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .team-name {
+        font-size: 0.7rem;
+    }
+    .outer {
+        width: 120px;
     }
 
-    .cursor:hover {
-        cursor: pointer;
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .team-name {
+        font-size: 1rem;
+    }
+    .outer {
+        width: 200px;
     }
 
-/* classes for each column to be turned off */
-.shieldColHead {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-   
-    /* display: var(--hideCol); */
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 200px;
+    }
 }
 
-.shieldCol {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     
-    /* display: var(--hideCol); */
+@media only screen and (max-width: 703px) {
+    .team-name {
+        font-size: 0.9rem;
+    }
+    .outer {
+        width: 170px;
+    }
+
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 170px;
+    }
 }
 
-.positionColHead {
-    /* display: var(--hideCol); */
+@media only screen and (max-width: 611px) {
+    .team-name {
+        font-size: 0.8rem;
+    }
+    .outer {
+        width: 150px;
+    }
+
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 150px;
+    }
 }
 
-.positionCol {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    /* display: var(--hideCol); */
+@media only screen and (max-width: 575px) {
+    .team-name {
+        font-size: 1rem;
+    }
+    .outer {
+        width: 220px;
+    }
+
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 220px;
+    }
 }
 
-.flagColHead {
-    /* display: var(--hideCol); */
+@media only screen and (max-width: 517px) {
+    .team-name {
+        font-size: 1rem;
+    }
+    .outer {
+        width: 200px;
+    }
+
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 200px;
+    }
 }
 
-.flagCol {
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 469px) {
+    .team-name {
+        font-size: 0.9rem;
+    }
+    .outer {
+        width: 180px;
+    }
 
-    /* display: var(--hideCol); */
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 180px;
+    }
 }
 
-.teamColHead {
+@media only screen and (max-width: 421px) {
+    .team-name {
+        font-size: 0.8rem;
+    }
+    .outer {
+        width: 160px;
+    }
 
-    /* display: var(--hideCol); */
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 160px;
+    }
 }
 
-.teamCol {
-    display: flex;
-    align-items: center;
- 
-    /* display: var(--hideCol); */
+@media only screen and (max-width: 365px) {
+    .team-name {
+        font-size: 0.8rem;
+    }
+    .outer {
+        width: 130px;
+    }
+
+    .inner {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 130px;
+    }
 }
 
-.shirtColHead {
-display: flex;
-justify-content: center;
-align-items: center;
-
-/* display: var(--hideCol); */
-}
-
-.shirtCol {
-display: flex;
-justify-content: center;
-align-items: center;
-
-/* display: var(--hideCol); */
-}
-
-.pColHead {
-    /* display: var(--hideCol); */
-}
-
-.pCol {
-    /* display: var(--hideCol); */
-}
-
-.ptsColHead {
-    /* display: var(--hideCol); */
-}
-
-.ptsCol {
-    /* display: var(--hideCol); */
-}
-
-.plusMinusColHead {
-    /* display: var(--hideCol); */
-}
-
-.plusMinusCol {
-    /* display: var(--hideCol); */
-}
-
-
-
-#specific
-{
-  display: inline-block;
-  padding: 5px 15px;
-  font-size: 15px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff; 
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform:translate(-50%, -50%);
-  /* background: rgb(255, 255, 255); */
-
-}
-.player
-{
-  width: 220px;
-  padding: 20px;
-  display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 10px;
- border-left: 2px solid white;
- border-right: 2px solid white;
- border-bottom: 2px solid white;
-  text-align: center;
-  position: relative;
-}
 
 .text-small {
     font-size: 0.8rem;
 }
 
+/* stopping modal from moving background */
+
 .modal-open[style] {
     padding-right: 0px !important;
-    }
+}
+
+/* carousel indicator styling */
 
 .carousel-control-prev-icon {
     background-color: rgb(107, 107, 107);
@@ -520,15 +534,22 @@ align-items: center;
     background-color: rgb(107, 107, 107);
 }
 
+/* modal styling */
+
 .modal-header {
-    background: rgb(0,70,208);
-    background: linear-gradient(45deg, rgba(0,70,208,1) 0%, rgba(0,36,108,1) 75%);
+    background: rgb(0, 70, 208);
+    background: linear-gradient(
+        45deg,
+        rgba(0, 70, 208, 1) 0%,
+        rgba(0, 36, 108, 1) 75%
+    );
 }
+
+/* iframe styling */
 
 iframe {
     box-shadow: 0px 0px 10px 2px black;
-   margin-top: 5px;
-   margin-bottom: 5px;
-   border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
 }
-
